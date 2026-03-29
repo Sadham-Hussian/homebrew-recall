@@ -1,9 +1,17 @@
 class Recall < Formula
   desc "Intelligent CLI history with semantic search"
   homepage "https://github.com/Sadham-Hussian/recall"
-  url "https://github.com/Sadham-Hussian/recall/releases/download/v0.1.6/recall_0.1.6_darwin_arm64.tar.gz"
-  sha256 "a347dad011d5a8cdb1977dc9d764880c5df843f5b58e79ca9b86f827469774c3"
   license "MIT"
+
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/Sadham-Hussian/recall/releases/download/v0.1.25/recall_darwin_arm64.tar.gz"
+      sha256 "ec71967d4fa3036ddcccfb38449ab4af85aefbe0b0600e49377759fa2f578393"
+    else
+      url "https://github.com/Sadham-Hussian/recall/releases/download/v0.1.25/recall_darwin_amd64.tar.gz"
+      sha256 "359dca8d03731cf431c23892ffb501197ad7fdb24c88813cf1b985c86aee0d24"
+    end
+  end
 
   def install
     bin.install "recall"

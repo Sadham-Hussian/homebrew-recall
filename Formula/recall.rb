@@ -6,10 +6,10 @@ class Recall < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Sadham-Hussian/recall/releases/download/v1.0.0/recall_darwin_arm64.tar.gz"
-      sha256 "96717ac1f1365a5470fd58de1df3490a03d89f1b899b1980b7fcad18bd3b46e4"
+      sha256 "fb0812ea1d1d205c71b78dbb461c6dd82163cdecc09eb76ee79dbbf57b25916b"
     else
       url "https://github.com/Sadham-Hussian/recall/releases/download/v1.0.0/recall_darwin_amd64.tar.gz"
-      sha256 "a24b293d01e64c2a0fde96c3445e8ccd6c818943f5ae5bca1863c31414bcd797"
+      sha256 "8948eb52c4522d775b0bd054a7533b8f54051b494472ff1ecf7f53ea04c2b7c1"
     end
   end
 

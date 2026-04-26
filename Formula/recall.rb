@@ -25,15 +25,15 @@
 class Recall < Formula
   desc "Intelligent CLI history with semantic search"
   homepage "https://github.com/Sadham-Hussian/recall"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Sadham-Hussian/recall/releases/download/v1.0.3/recall_darwin_arm64.tar.gz"
+      url "https://github.com/Sadham-Hussian/recall/releases/download/v1.0.4/recall_darwin_arm64.tar.gz"
       sha256 "dea61beaabb343f17757da230b5dba47fe1a9ee3fdbe51e0de31d347cb683019"
     else
-      url "https://github.com/Sadham-Hussian/recall/releases/download/v1.0.3/recall_darwin_amd64.tar.gz"
+      url "https://github.com/Sadham-Hussian/recall/releases/download/v1.0.4/recall_darwin_amd64.tar.gz"
       sha256 "7cd2a4cf34adfa0fc099aee4f5cb232e6e1b6dfa816d29ce0bdccddaa2296877"
     end
   end
